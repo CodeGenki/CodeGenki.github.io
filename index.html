@@ -1,5 +1,40 @@
 <!DOCTYPE HTML>
 <html>
+	<style type="text/css">
+		.tooltip {
+			color: #00ff99;
+			position: relative;
+			display: inline-block;
+		}
+		.tooltip .tooltiptext {
+		    visibility: hidden;
+		    width: 120px;
+		    background-color: #999999;
+		    color: #fff;
+		    text-align: center;
+		    border-radius: 6px;
+		    padding: 5px 0;
+		    position: absolute;
+		    z-index: 1;
+		    top: 100%;
+		    left: 50%;
+		    margin-left: -60px;
+		}
+
+		.tooltip .tooltiptext::after {
+		    content: "";
+		    position: absolute;
+		    bottom: 100%;
+		    left: 50%;
+		    margin-left: -5px;
+		    border-width: 5px;
+		    border-style: solid;
+		    border-color: transparent transparent #999999 transparent;
+		}
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+		}
+	</style>
 	<head>
 		<title>Genki Oji</title>
 		<meta charset="utf-8" />
@@ -56,15 +91,31 @@
 							<section id="two">
 								<div class="container">
 									<h3>Things I Can Do</h3>
-									<p>Throughought college, internships, hackathons, and life in general, I've picked up some cool skills. 
-										<br>Check them out:</p>
+									<p>Throughought college, internships, hackathons, and life in general, I've picked up some cool skills.</p>
 									<ul class="feature-icons">
-										<li class="fa-code">Write all the code</li>
-										<li class="fa-cubes">Stack small boxes</li>
-										<li class="fa-book">Read books and stuff</li>
+										<li class="fa-code">Quickly learn new coding skills</li>
+										<li class="fa-cubes">Work with <span class="tooltip">these<span class="tooltiptext">
+											<b>I'm good at:</b><br>
+											C<br>
+											C++<br>
+											C#<br>
+											Java<br>
+											<b>I've done a little of:</b><br>
+											Python<br>
+											HTML<br>
+											Javascript<br>
+										</span></span> programming languages</li>
+										<li class="fa-users">Work effectively in a team</li>
+										<li class="fa-book">Speak Japanese</li>
 										<li class="fa-coffee">Drink much coffee</li>
-										<li class="fa-bolt">Lightning bolt</li>
-										<li class="fa-users">Shadow clone technique</li>
+										<li class="fa-bolt">Other related <span class="tooltip">skills<span class="tooltiptext">
+											Git<br>
+											Linux<br>
+											MATLAB<br>
+											LabVIEW<br>
+											AWS
+										</span></span></li>
+										
 									</ul>
 								</div>
 							</section>
