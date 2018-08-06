@@ -53,9 +53,10 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#four">Related Courses</a></li>
+						<li><a href="#five">Work Experience</a></li>
 						<li><a href="#two">Things I Can Do</a></li>
 						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Related Courses</li>
 					</ul>
 				</nav>
 				<footer>
@@ -86,12 +87,36 @@
 									<p>I'm currently in my fourth year at The University of Texas at Austin studying computer engineering. <br>My focus is in software engineering and embedded systems. Give me a challenge and I'll figure out how to get through it. I love learning new things and applying them to my projects. I also enjoy working with teams at hackathons to make awesome ideas a reality.</p>
 								</div>
 							</section>
-
+							<section id="four">
+								<div class="container">
+									<h3><i class="fa fa-graduation-cap" style="color: #4acaa8"></i> Related Courses</h3>
+									<p>A small showcase of relevant courses that I have taken so far.</p>
+									<div class="row">
+										<div class="col-6 col-12-xsmall">
+											<h5>Intro to Embedded Systems</h5>
+											<p>Worked with TI microcontrollers and interfaced with buttons, LEDs, potentiometers, and LCDs. Programmed in assembly language and C.</p>
+											<h5>Software Design and Implementation I & II</h5>
+											<p>Learned object oriented programming principles, data structures, and networking. Programmed in C++ and Java.</p>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<h5>Computer Architecture</h5>
+											<p>Learned how all of the aspects of a CPU function and interact with each other. Made a fully functional console emulation of the CPU using C.</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						<!-- Five -->
+							<section id="five">
+								<div class="container">
+									<h3>Work Experience</h3>
+									<p>The past two summers, I've had the opportunity to gain work experience related to my field of interest.</p>
+								</div>
+							</section>
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
 									<h3>Things I Can Do</h3>
-									<p>Throughought college, internships, hackathons, and life in general, I've picked up some cool skills.</p>
+									<p>Throughought college, internships, hackathons, and life in general, I've picked up some neat skills.</p>
 									<ul class="feature-icons">
 										<li class="fa-code">Quickly learn new coding skills</li>
 										<li class="fa-cubes">Work with <span class="tooltip">these<span class="tooltiptext">
@@ -128,47 +153,30 @@
 									<p>These are some of the projects/accomplishments that I'm the most proud of.</p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a class="image"><img src="images/pic011.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Robotathon Beginner Robotics Competition</h4>
+												<p>My first step into robotics/embedded systems. With a team of 5 beginners, I built a robot that sorts marbles and ping pong balls and follows walls.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="https://github.com/CodeGenki/EE319K_Lab10" class="image"><img src="images/pic021.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Embedded Systems Final Project</h4>
+												<p>Connected buttons, a potentiometer, and an LCD screen to a microcontroller and made a 2D Pokemon fighting game using C.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="https://github.com/CodeGenki/CodeRed" class="image"><img src="images/pic031.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Virtually Windows VR Smartphone Application</h4>
+												<p>A smartphone VR application that demonstrates core VR principles. This hackathon project won first place for a side challenge presented by a sponsor.</p>
 											</div>
 										</article>
 									</div>
 								</div>
 							</section>
-							<section id="four">
-								<div class="container">
-									<h3><i class="fa fa-graduation-cap" style="color: #4acaa8"></i> Related Courses</h3>
-									<p>A small showcase of relevant courses that I have taken so far.</p>
-									<div class="row">
-										<div class="col-6 col-12-xsmall">
-											<h5>Intro to Embedded Systems</h5>
-											<p>Worked with TI microcontrollers and interfaced with buttons, LEDs, potentiometers, and LCDs. Programmed in assembly language and C.</p>
-											<h5>Software Design and Implementation I & II</h5>
-											<p>Learned object oriented programming principles, data structures, and networking. Programmed in C++ and Java.</p>
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<h5>Computer Architecture</h5>
-											<p>Learned how all of the aspects of a CPU function and interact with each other. Made a fully functional console emulation of the CPU using C.</p>
-										</div>
-									</div>
-								</div>
-							</section>
+							
 						<!-- Four -->
 						<!--
 							<section id="four">
@@ -546,4 +554,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<script type="text/javascript">
+		function copyClipboard() {
+			var copyText = document.getElementById("myInput");
+			copyText.select();
+			document.execCommand("copy");
+		}
+	</script>
 </html>
